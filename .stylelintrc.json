@@ -1,0 +1,89 @@
+{
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-config-rational-order/plugin"
+  ],
+  "rules": {
+    "indentation": "tab",
+    "linebreaks": "unix",
+    "max-empty-lines": 2,
+    "max-line-length": 120,
+
+    "no-empty-first-line": true,
+    "no-extra-semicolons": true,
+    "no-unknown-animations": true,
+
+    "alpha-value-notation": "number",
+    "font-weight-notation": "named-where-possible",
+
+    "number-leading-zero": "never",
+    "number-no-trailing-zeros": true,
+    "length-zero-no-unit": [true, {
+      "ignore": ["custom-properties"]
+    }],
+
+
+    "function-calc-no-unspaced-operator": true,
+    "function-comma-space-after": "always-single-line",
+    "function-parentheses-space-inside": "never-single-line",
+
+    "value-no-vendor-prefix": true,
+
+    "block-no-empty": [true, {
+      "ignore": ["comments"]
+    }],
+    "block-closing-brace-newline-after": "always",
+
+    "declaration-no-important": true,
+    "declaration-block-no-duplicate-properties": true,
+    "declaration-block-single-line-max-declarations": 0,
+    "declaration-block-semicolon-space-after": "always-single-line",
+    "declaration-block-semicolon-newline-after": "always-multi-line",
+
+    "shorthand-property-no-redundant-values": true,
+
+    "comment-no-empty": true,
+
+    "keyframe-declaration-no-important": true,
+    "keyframes-name-pattern": "bui-.+",
+
+    "function-name-case": "lower",
+    "property-case": "lower",
+    "unit-case": "lower",
+    "selector-type-case": "lower",
+    "selector-pseudo-class-case": "lower",
+    "selector-pseudo-element-case": "lower",
+
+    "unit-no-unknown": true,
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["/^s[0-9]{3}/", "main"]
+    }],
+    "selector-pseudo-class-no-unknown": [true, {
+      "ignorePseudoClasses": ["local", "global"]
+    }],
+    "at-rule-no-unknown": true,
+    "media-feature-name-no-unknown": true,
+
+    "color-function-notation": "legacy",
+    "color-no-invalid-hex": true,
+    "color-hex-case": "lower",
+    "color-hex-length": "long",
+    "color-named": "never",
+
+    "font-family-name-quotes": "always-where-recommended",
+    "font-family-no-duplicate-names": true,
+    "font-family-no-missing-generic-family-keyword": true,
+
+    "string-no-newline": true,
+    "string-quotes": "single",
+
+    "plugin/rational-order": [true, {
+      "border-in-box-model": false,
+      "empty-line-between-groups": true
+    }]
+  }
+}

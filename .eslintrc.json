@@ -1,0 +1,180 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020,
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      "tab",
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quote-props": [
+      "error",
+      "consistent-as-needed"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "accessor-pairs": [
+      "error"
+    ],
+    "brace-style": [
+      "error",
+      "stroustrup",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "only-multiline",
+        "objects": "only-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "comma-style": [
+      "error",
+      "last"
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "getter-return": [
+      "error",
+      {
+        "allowImplicit": false
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "new-parens": [
+      "error"
+    ],
+    "no-alert": [
+      "error"
+    ],
+    "no-case-declarations": [
+      "off"
+    ],
+    "no-console": [
+      "warn",
+      {
+        "allow": [
+          "error",
+          "warn"
+        ]
+      }
+    ],
+    "no-debugger": [
+      "error"
+    ],
+    "no-eval": [
+      "error"
+    ],
+    "no-extend-native": [
+      "error"
+    ],
+    "no-extra-boolean-cast": [
+      "off"
+    ],
+    "no-lone-blocks": [
+      "error"
+    ],
+    "no-mixed-spaces-and-tabs": [
+      "error"
+    ],
+    "no-return-assign": [
+      "error",
+      "always"
+    ],
+    "no-self-assign": [
+      "error"
+    ],
+    "no-self-compare": [
+      "error"
+    ],
+    "no-sparse-arrays": [
+      "error"
+    ],
+    "no-trailing-spaces": [
+      "error",
+      {
+        "skipBlankLines": false,
+        "ignoreComments": false
+      }
+    ],
+    "no-unreachable": [
+      "error"
+    ],
+    "no-void": [
+      "error"
+    ],
+    "no-with": [
+      "error"
+    ],
+    "one-var": [
+      "error",
+      {
+        "initialized": "never",
+        "uninitialized": "consecutive"
+      }
+    ],
+    "strict": [
+      "off"
+    ],
+    "use-isnan": [
+      "error"
+    ],
+    "vars-on-top": [
+      "error"
+    ],
+    "wrap-iife": [
+      "error"
+    ],
+    "yoda": [
+      "error"
+    ]
+  }
+}
