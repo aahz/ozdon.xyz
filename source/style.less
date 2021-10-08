@@ -1,0 +1,23 @@
+@import './style/use';
+
+:global {
+	html, body {
+		font-family: @montserrat, Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		height: 100%;
+		min-height: 100%;
+
+		@media screen and (max-width: 768px) {
+			font-size: 10px;
+		}
+	}
+
+	body {
+		color: @grey-light;
+		background-color: @grey-dark;
+	}
+
+	#oz-root {
+		height: 100%;
+	}
+}

@@ -1,0 +1,44 @@
+@import '../../../style/use';
+
+.logo {
+	position: absolute;
+	bottom: 4rem;
+	left: 4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: stretch;
+	text-decoration: none;
+
+	&:focus {
+		outline: none;
+	}
+
+	&__name,
+	&__position {
+		font-family: @fira-code;
+		display: block;
+	}
+
+	&__name {
+		position: relative;
+		left: 3.75rem;
+		font-size: 4rem;
+		font-weight: bold;
+		white-space: nowrap;
+
+		&__regular {
+			color: @grey-light;
+		}
+
+		&__accent {
+			color: @turquoise;
+		}
+	}
+
+	&__position {
+		font-size: 2rem;
+		white-space: nowrap;
+		color: @gery-regular;
+	}
+}
