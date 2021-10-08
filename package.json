@@ -6,9 +6,9 @@
   "source": "source/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "clean": "rm -rf ./dist/*",
-    "start": "npm run clean && parcel",
-    "build": "npm run clean && parcel build",
+    "clean": "rm -rf ./dist/* ./.parcel-cache",
+    "start": "npm run clean && parcel --no-cache --open",
+    "build": "npm run clean && parcel build --no-cache",
     "preversion": "npm run build",
     "version": "git add ./dist/*"
   },
