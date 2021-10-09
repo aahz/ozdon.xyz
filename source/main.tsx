@@ -3,6 +3,8 @@ import * as ReactDOM from 'react-dom';
 
 import {Application} from "./application";
 
+import './style.less';
+
 (function (window, document, undefined) {
 	ReactDOM.render(
 		<Application/>,

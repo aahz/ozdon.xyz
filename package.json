@@ -2,13 +2,13 @@
   "name": "ozdon.xyz",
   "private": true,
   "version": "1.0.0",
-  "description": "Personal web page",
+  "description": "Software developer",
   "source": "source/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
     "clean": "rm -rf ./dist/* ./.parcel-cache",
     "start": "npm run clean && parcel --no-cache --open",
-    "build": "npm run clean && parcel build --no-cache",
+    "build": "npm run clean && parcel build --no-cache --no-scope-hoist",
     "preversion": "npm run build",
     "version": "git add ./dist/*"
   },

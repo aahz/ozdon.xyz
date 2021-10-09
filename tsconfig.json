@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "pretty": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "importHelpers": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "declarationDir": "dist",
+    "declarationMap": false,
+    "removeComments": true,
+    "esModuleInterop": true,
+
+    "typeRoots": [
+      "./node_modules/@types",
+      "./source/types"
+    ],
+
+    "lib": ["es2019", "es6", "es7", "dom"],
+    "baseUrl": ".",
+  },
+  "includes": [
+    "source/**/*"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules",
+  ]
+}
