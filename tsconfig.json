@@ -20,9 +20,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "declaration": true,
-    "declarationDir": "dist",
-    "declarationMap": false,
+    "declaration": false,
     "removeComments": true,
     "esModuleInterop": true,
 
@@ -40,5 +38,6 @@
   "exclude": [
     "dist",
     "node_modules",
+    "server"
   ]
 }

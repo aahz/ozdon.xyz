@@ -4,10 +4,12 @@
 	position: absolute;
 	bottom: 4rem;
 	left: 4rem;
+
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: stretch;
+	justify-content: flex-start;
+
 	text-decoration: none;
 
 	&:focus {
@@ -16,15 +18,17 @@
 
 	&__name,
 	&__position {
-		font-family: @fira-code;
 		display: block;
+
+		font-family: @fira-code;
 	}
 
 	&__name {
 		position: relative;
 		left: 3.75rem;
-		font-size: 4rem;
+
 		font-weight: bold;
+		font-size: 4rem;
 		white-space: nowrap;
 
 		&__regular {
@@ -37,8 +41,8 @@
 	}
 
 	&__position {
+		color: @gery-regular;
 		font-size: 2rem;
 		white-space: nowrap;
-		color: @gery-regular;
 	}
 }

@@ -17,7 +17,7 @@ export class Logo extends React.Component<ILogoPropTypes, ILogoStateTypes> {
 				<span className={cn.get('name', 'regular')}>OZD</span>
 				<span className={cn.get('name', 'accent')}>ON</span>
 			</span>
-		)
+		);
 	}
 
 	private _renderPosition(): React.ReactElement {
@@ -36,6 +36,6 @@ export class Logo extends React.Component<ILogoPropTypes, ILogoStateTypes> {
 				{this._renderName()}
 				{this._renderPosition()}
 			</a>
-		)
+		);
 	}
 }

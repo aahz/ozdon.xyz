@@ -2,8 +2,8 @@ import * as React from 'react';
 
 import {CN} from '../libs/cn';
 
-import {Logo} from "./components/logo";
-import {QR} from "./components/qr";
+import {Logo} from './components/logo';
+import {QR} from './components/qr';
 
 import style from './style.less';
 
@@ -20,6 +20,6 @@ export class Application extends React.Component<IApplicationPropTypes, IApplica
 				<Logo />
 				<QR />
 			</div>
-		)
+		);
 	}
 }

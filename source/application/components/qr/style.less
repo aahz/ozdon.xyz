@@ -6,10 +6,11 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+
 	margin: -(@size / 2) 0 0 -(@size / 2);
 	.size(@size);
-	background-image: url(./images/qr-code.png);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
+
+	&__image {
+		.size(100%);
+	}
 }
